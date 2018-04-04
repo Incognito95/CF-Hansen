@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    margin:0;
+    font-family: helvetica, Arial, sans-serif;
+}
+#wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #600d0d;
+    font-size: 22px;
+    margin: 0 0 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+p {
+    font-size:14px;
+    text-align: justify;
+}
+
+header, nav {
+    display:flex;
+    background-repeat:no-repeat;
+}
+header {
+    background-image:url(billeder-jpg-filer/kapitael.jpg);
+    background-color: #600d0d;
+    justify-content: left;
+    color: white;
+    height: 9.5em;
+    width: 100%;
+    padding-left: 1px;
+}
+main {
+    flex: 1 1 56em;
+}
+nav {
+    flex:0 0 8em;
+}
+nav ul{
+    margin: 0;
+    list-style: none;
+}
+nav li{
+    margin-bottom: 1.375em;
+    text-align: right;
+    padding: 0;
+    height: 10;
+}
+nav a{
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+}
+main article {
+    width: 52em;
+    margin: 0 auto;
+    column-count: 2;
+    column-gap: 2em;
+}
+main figure {
+    margin: 0;
+}
+main figure:first-of-type
+{ break-before: column;
+}
+main, nav{
+    padding: 6em 0;
+}
+
+article h2{
+    column-span: all;
+}
+footer{
+    height: 6.25em;
+    background-color: #600d0d;
+    color: white;
+    width: 100%;
+    padding-left: 8em;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+article h2 + p{
+    margin-top: 0
+}
+header h1{
+    width: 26em;
+    margin: auto;
+    padding-left: 8em;
+}
+
+footer p{
+    margin: auto;
+}
+footer section{
+    margin:auto;
+    width: 52em;
+}
+img {
+    background-image: url(../billeder-jpg-filer/vorfrue_front.jpg);
+    background-image: url(..billeder-jpg-filer/vorfrue_int.jpg);
+    padding: 10px;
+}
